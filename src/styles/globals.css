@@ -1,0 +1,37 @@
+
+
+.avatar{
+    border-radius: 68px;
+}
+
+.project_img:hover .project_img_layout{
+    visibility: visible;
+    top: 70px;
+    transition: all 0.5s ease;
+}
+.project_container{
+    background-color: #2f2f2f !important;
+}
+.project_slider{
+    height:100vh;
+    
+}
+
+@media screen and (max-width: 600px) {
+    .project_img {
+        width: 20vh;
+    }
+    .avatar{
+        width : 180px;
+        height : 210px;
+    }
+    .project_slider{
+        height: 45vh;
+        
+    }
+    .project_slider_img{
+        height: 25vh;
+        width: 75vw
+        
+    }
+}
