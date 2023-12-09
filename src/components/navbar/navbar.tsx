@@ -52,7 +52,7 @@ const Navbar = ({window} : Props) => {
         {navItems.map((item) => (
           <ListItem key={item.route} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item.label} onClick={() =>  router.push(`${item.route}`)}/>
+              <ListItemText primary={item.label} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -92,7 +92,7 @@ const Navbar = ({window} : Props) => {
           </Box>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item.route} sx={{ color: '#fff' }} onClick={() => router.push(`${item.route}`)}>
+              <Button key={item.route} sx={{ color: '#fff' }} >
                 {item.label}
               </Button>
             ))}
